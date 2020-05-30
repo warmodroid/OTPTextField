@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OTPtextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="social-media-2786261_1280" translatesAutoresizingMaskIntoConstraints="NO" id="rus-Vh-hXU">
+                                <rect key="frame" x="0.0" y="65" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="06t-kh-3XA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-no-pHB">
+                                <rect key="frame" x="0.0" y="286" width="414" height="45"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP has been sent to the registered number +91-8543XXXX34" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0O-cw-uHh">
+                                <rect key="frame" x="0.0" y="342" width="414" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FA-1P-5C7" customClass="OTPView" customModule="OTPtextField" customModuleProvider="target">
+                                <rect key="frame" x="107" y="404" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hP8-NH-5qj"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend OTP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obw-PC-Voi">
+                                <rect key="frame" x="0.0" y="465" width="414" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V7-iY-fkE">
+                                <rect key="frame" x="60" y="580" width="294" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mXr-jS-veE"/>
+                                </constraints>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wu8-no-pHB" secondAttribute="trailing" id="0QP-QA-Imz"/>
+                            <constraint firstAttribute="trailing" secondItem="E0O-cw-uHh" secondAttribute="trailing" id="76B-ch-tHJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="obw-PC-Voi" secondAttribute="trailing" id="Jtd-MZ-ALq"/>
+                            <constraint firstItem="rus-Vh-hXU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="P0L-RU-1jV"/>
+                            <constraint firstItem="obw-PC-Voi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QPT-Vw-Ucd"/>
+                            <constraint firstItem="E0O-cw-uHh" firstAttribute="top" secondItem="Wu8-no-pHB" secondAttribute="bottom" constant="11" id="X3v-2O-Mv2"/>
+                            <constraint firstItem="6FA-1P-5C7" firstAttribute="top" secondItem="E0O-cw-uHh" secondAttribute="bottom" constant="21" id="XOC-z4-8Nw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6V7-iY-fkE" secondAttribute="trailing" constant="60" id="bNL-mu-uNg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6FA-1P-5C7" secondAttribute="trailing" constant="107" id="ci6-cq-e8M"/>
+                            <constraint firstItem="Wu8-no-pHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d99-PT-Led"/>
+                            <constraint firstItem="obw-PC-Voi" firstAttribute="top" secondItem="6FA-1P-5C7" secondAttribute="bottom" constant="11" id="gZH-nc-0P8"/>
+                            <constraint firstItem="Wu8-no-pHB" firstAttribute="top" secondItem="rus-Vh-hXU" secondAttribute="bottom" constant="21" id="gjZ-8v-7nK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rus-Vh-hXU" secondAttribute="trailing" id="guU-rO-eO1"/>
+                            <constraint firstItem="6V7-iY-fkE" firstAttribute="top" secondItem="obw-PC-Voi" secondAttribute="bottom" constant="98" id="ifo-4B-5Ot"/>
+                            <constraint firstItem="E0O-cw-uHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kvJ-6Z-k8A"/>
+                            <constraint firstItem="6FA-1P-5C7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="lSs-K1-Jno"/>
+                            <constraint firstItem="rus-Vh-hXU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tEP-ps-v8T"/>
+                            <constraint firstItem="6V7-iY-fkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="u2f-e4-vf0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="verifyButton" destination="6V7-iY-fkE" id="6Cp-Mn-krC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="social-media-2786261_1280" width="1280" height="853"/>
+    </resources>
+</document>
